@@ -1,4 +1,5 @@
 
+import static com.mysql.cj.conf.PropertyKey.verifyServerCertificate;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -22,7 +23,7 @@ public class conectaDAO {
         
         try {
         
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/uc11?user=root&password=");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/uc11?user=root&password=milk1967");
             
         } catch (SQLException erro){
             JOptionPane.showMessageDialog(null, "Erro ConectaDAO" + erro.getMessage());
